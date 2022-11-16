@@ -12,10 +12,11 @@ user_unit = input("What unit is your number?")
 if(user_unit == 'in'):
     #perform in to mm
     conv_number = user_number * 25.4
+    conv_unit = 'mm'
 elif(user_unit == 'mm'):
     #perform mm to in
     conv_number = user_number / 25.4
-
-
-print(conv_number)
-print(user_unit)
+    conv_unit = 'in'
+else:
+    print('That is not a valid unit')
+print(conv_number, conv_unit)
